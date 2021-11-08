@@ -1,0 +1,68 @@
+// 1200px
+// 992px
+// 768px
+// 480px
+// 360px
+// 320px
+
+$font-family-title: 'DM Sans',
+sans-serif;
+$font-family-txt: 'Mulish',
+sans-serif;
+$font-color-title: #19191B;
+$font-color-txt: #696871;
+$color-purple: #5454D4;
+$color-orange: #FF7143;
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 992px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        width: 768px;
+        padding: 0 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+
+        &-logo {
+            margin-bottom: 20px;
+        }
+
+        &-nav {
+            width: 80%;
+            margin-bottom: 20px;
+
+            &-isActive{
+                padding: 0 10px;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                background-color: $color-purple;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .wrapper {
+        width: 320px;
+    }
+}
