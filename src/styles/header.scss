@@ -1,0 +1,49 @@
+$font-family-title: 'DM Sans',
+sans-serif;
+$font-family-txt: 'Mulish',
+sans-serif;
+$font-color-title: #19191B;
+$font-color-txt: #696871;
+$color-purple: #5454D4;
+$color-orange: #FF7143;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    &-logo {
+        display: block;
+        width: 200px;
+        height: 40px;
+        background: url('../images/icons/logo.svg') no-repeat center;
+    }
+
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+
+        &-item{
+            font-family: $font-family-title;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 30px;
+            color: $font-color-txt;
+        }
+
+        &-item:hover{
+            color: $font-color-title;
+        }
+
+        &-isActive{
+            color: $font-color-title;
+            border-bottom: 2px solid $color-purple;
+        }
+    }
+
+    &-button{
+        background-color: $color-orange;
+    }
+}

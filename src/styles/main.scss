@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('./header.scss');
+
+$font-family-title: 'DM Sans',
+sans-serif;
+$font-family-txt: 'Mulish',
+sans-serif;
+$font-color-title: #19191B;
+$font-color-txt: #696871;
+$color-purple: #5454D4;
+$color-orange: #FF7143;
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0 110px;
+}
+
+.button {
+    padding: 0 60px;
+    background-color: $color-purple;
+    border: none;
+    border-radius: 10px;
+    font-family: $font-family-title;
+    font-size: 17px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.button:hover{
+    cursor: pointer;
+}
