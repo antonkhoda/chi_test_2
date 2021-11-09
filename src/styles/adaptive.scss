@@ -18,6 +18,15 @@ $color-orange: #FF7143;
     .wrapper {
         width: 992px;
     }
+
+    h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -38,7 +47,7 @@ $color-orange: #FF7143;
             width: 80%;
             margin-bottom: 20px;
 
-            &-isActive{
+            &-isActive {
                 padding: 0 10px;
                 border: none;
                 border-radius: 10px;
@@ -47,11 +56,112 @@ $color-orange: #FF7143;
             }
         }
     }
+
+    .main {
+
+        &-sectionRowRev,
+        &-sectionRow {
+            min-height: 550px;
+        }
+    }
+
+    .button {
+        padding: 0 25px;
+        line-height: 50px;
+    }
+
+    .buttonArrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .img {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .wrapper {
         width: 480px;
+    }
+
+    .main {
+
+        &-sectionRow,
+        &-sectionRowRev {
+            flex-direction: column-reverse;
+            padding: 30px 0;
+        }
+
+        &-section-txt,
+        &-section-pic {
+            width: 100%;
+        }
+
+        &-sectionLinks {
+            justify-content: space-around;
+            padding: 30px 0;
+        }
+
+        .main-section-txt-btnBlock {
+            justify-content: center;
+        }
+
+        &-sectionCards {
+            padding: 50px 0;
+
+            &-head {
+                margin-bottom: 60px;
+
+                justify-content: center;
+                flex-direction: column;
+
+                &-item {
+                    width: 100%;
+                    padding-bottom: 20px;
+                }
+
+                &-btns {
+                    justify-content: center;
+                }
+            }
+
+            &-main {
+                flex-direction: column;
+
+                &-item {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                &-isActive {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        &-sectionSB-item-pic {
+            width: 120px;
+        }
+    }
+
+    .img {
+        height: 480px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        font-size: 40px;
     }
 }
 
@@ -59,10 +169,35 @@ $color-orange: #FF7143;
     .wrapper {
         width: 360px;
     }
+
+    .img {
+        height: 400px;
+    }
+
+    .main {
+        &-sectionSB {
+            flex-direction: column;
+
+            &-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    h1,
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 
 @media screen and (max-width: 360px) {
     .wrapper {
         width: 320px;
+    }
+
+    .img {
+        height: 300px;
     }
 }

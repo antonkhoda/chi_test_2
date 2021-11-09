@@ -8,6 +8,7 @@ $font-family-txt: 'Mulish',
 sans-serif;
 $font-color-title: #19191B;
 $font-color-txt: #696871;
+$color-light-bg: #f7f6fb;
 $color-purple: #5454D4;
 $color-orange: #FF7143;
 
@@ -20,7 +21,21 @@ $color-orange: #FF7143;
 }
 
 a {
+    font-size: 17px;
+    font-weight: bold;
+    color: $color-purple;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: $color-orange;
+}
+
+body {
+    font-family: $font-family-txt;
+    font-size: 20px;
+    color: $font-color-txt;
 }
 
 .wrapper {
@@ -36,10 +51,117 @@ a {
     border-radius: 10px;
     font-family: $font-family-title;
     font-size: 17px;
+    font-weight: bold;
     line-height: 60px;
     color: #fff;
+    transition: 0.5s;
+
+    &-marginR {
+        margin-right: 40px;
+    }
 }
 
-.button:hover{
+.button:hover {
     cursor: pointer;
+    background-color: $color-orange;
+}
+
+.buttonArrow {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icons/arrow-down.svg) no-repeat center;
+    background-size: 40%;
+    border: 1px solid $color-light-bg;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.buttonArrow:hover {
+    cursor: pointer;
+    background-color: $color-orange;
+    border-color: $color-orange;
+}
+
+.switchButton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: $color-light-bg;
+    border-radius: 10px;
+
+    &-item {
+        padding: 0 50px;
+        color: $font-color-title;
+        background-color: $color-light-bg;
+        line-height: 55px;
+        border-radius: 0;
+    }
+
+    &-isActive {
+        color: #fff;
+        background-color: $color-purple;
+    }
+
+    &-item:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    &-item:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+h1,h2,h3,h4,h5{
+    font-family: $font-family-title;
+    color: $font-color-title;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 75px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 650px;
+}
+
+.fontS-30{
+    font-size: 30px;
+}
+
+.marginB-20{
+    margin-bottom: 20px;
+}
+
+.marginB-25{
+    margin-bottom: 25px;
+}
+
+.marginB-40{
+    margin-bottom: 40px;
+}
+
+.marginR-40{
+    margin-right: 40px;
 }

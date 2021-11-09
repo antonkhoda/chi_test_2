@@ -47,4 +47,8 @@ $color-orange: #FF7143;
     &-button{
         background-color: $color-orange;
     }
+
+    &-button:hover{
+        background-color: $color-purple;
+    }
 }

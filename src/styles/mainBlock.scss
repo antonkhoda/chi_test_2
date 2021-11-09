@@ -1,0 +1,196 @@
+$font-family-title: 'DM Sans',
+sans-serif;
+$font-family-txt: 'Mulish',
+sans-serif;
+$font-color-title: #19191B;
+$font-color-txt: #696871;
+$color-light-bg: #f7f6fb;
+$color-purple: #5454D4;
+$color-orange: #FF7143;
+
+.main {
+    &-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-txt {
+            width: 50%;
+
+            &-upToButton {
+                margin-bottom: 45px;
+            }
+
+            &-btnBlock {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+
+        &-pic {
+            width: 50%;
+        }
+    }
+
+    &-sectionLinks{
+        flex-wrap: wrap;
+
+        &-item{
+            width: 120px;
+            height: 60px;
+        }
+    }
+
+    &-sectionRow {
+        flex-direction: row;
+        min-height: 730px;
+    }
+
+    &-sectionRowRev {
+        flex-direction: row-reverse;
+        min-height: 730px;
+    }
+
+    &-sectionSB{
+        padding: 40px 0;
+
+        &-item{
+            width: 30%;
+
+            &-pic{
+                width: 150px;
+                height: 90px;
+                margin: 0 auto 10px auto;
+            }
+
+            &-txt{
+                font-size: 16px;
+            }
+        }
+    }
+
+    &-sectionCards{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 100px 0;
+        
+        &-head{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+
+            &-item{
+                width: 50%;
+            }
+
+            &-btns{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+
+        &-main{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &-item{
+                width: 30%;
+                padding: 30px 20px;
+                border-radius: 10px;
+                font-size: 18px;
+                text-align: center;
+                background-color: $color-light-bg;
+
+                &-title{
+                    margin-bottom: 10px;
+                }
+
+                &-btn{
+                    width: 100%;
+                    color: $color-purple;
+                    background-color: #fff;
+                }
+
+                &-btn:hover{
+                    color: $font-color-title;
+                }
+            }
+
+            &-isActive{
+                transform: scale(1.2);
+                background-color: $color-orange;
+                color: #fff;
+
+                h2{
+                    color: #fff;
+                }
+
+                .main-sectionCards-main-item-btn{
+                    background-color: #a0391a;
+                    color: #fff;
+                }
+
+                .main-sectionCards-main-item-btn:hover{
+                    background-color: $color-purple;
+                }
+            }
+        }
+    }
+}
+
+.pic1st {
+    background: url('../images/pictures/block-1.png') no-repeat center;
+    background-size: 100%;
+}
+
+.pic2nd{
+    background: url('../images/pictures/block-2.png') no-repeat center;
+    background-size: 70%;
+}
+
+.pic3rd{
+    background: url('../images/pictures/block-3.png') no-repeat center;
+    background-size: 70%;
+}
+
+.linkPic1{
+    background: url('../images/icons/main-pic-1.svg') no-repeat center;
+    background-size: 100%;
+}
+
+.linkPic2{
+    background: url('../images/icons/main-pic-2.svg') no-repeat center;
+    background-size: 100%;
+}
+
+.linkPic3{
+    background: url('../images/icons/main-pic-3.svg') no-repeat center;
+    background-size: 80%;
+}
+
+.linkPic4{
+    background: url('../images/icons/main-pic-4.svg') no-repeat center;
+    background-size: 100%;
+}
+
+.linkPic5{
+    background: url('../images/icons/main-pic-5.svg') no-repeat center;
+    background-size: 100%;
+}
+
+.picMini1st {
+    background: url('../images/pictures/block-4-pic-1.png') no-repeat center;
+    background-size: 100%;
+}
+
+.picMini2nd{
+    background: url('../images/pictures/block-4-pic-2.png') no-repeat center;
+    background-size: 100%;
+}
+
+.picMini3rd{
+    background: url('../images/pictures/block-4-pic-3.png') no-repeat center;
+    background-size: 100%;
+}
