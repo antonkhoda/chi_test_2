@@ -14,9 +14,11 @@ $font-color-txt: #696871;
 $color-purple: #5454D4;
 $color-orange: #FF7143;
 
-@media screen and (max-width: 1200px) {
-    .wrapper {
+@media screen and (max-width: 1280px) {
+    .wrapper,
+    .wrapper--large {
         width: 992px;
+        padding: 0 20px 0 110px;
     }
 
     h1 {
@@ -30,7 +32,8 @@ $color-orange: #FF7143;
 }
 
 @media screen and (max-width: 992px) {
-    .wrapper {
+    .wrapper,
+    .wrapper--large {
         width: 768px;
         padding: 0 20px;
     }
@@ -39,7 +42,7 @@ $color-orange: #FF7143;
         flex-direction: column;
         padding: 20px;
 
-        &-logo {
+        &__logo {
             margin-bottom: 20px;
         }
 
@@ -47,7 +50,7 @@ $color-orange: #FF7143;
             width: 80%;
             margin-bottom: 20px;
 
-            &-isActive {
+            &--is-active {
                 padding: 0 10px;
                 border: none;
                 border-radius: 10px;
@@ -57,20 +60,11 @@ $color-orange: #FF7143;
         }
     }
 
-    .main {
-
-        &-sectionRowRev,
-        &-sectionRow {
-            min-height: 550px;
-        }
-    }
-
     .button {
-        padding: 0 25px;
         line-height: 50px;
     }
 
-    .buttonArrow {
+    .button--arrow {
         width: 50px;
         height: 50px;
     }
@@ -90,20 +84,21 @@ $color-orange: #FF7143;
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper {
+    .wrapper,
+    .wrapper--large {
         width: 480px;
     }
 
     .main {
 
-        &-sectionRow,
-        &-sectionRowRev {
+        &-section--row,
+        &-section--row-rev {
             flex-direction: column-reverse;
             padding: 30px 0;
         }
 
-        &-section-txt,
-        &-section-pic {
+        &-section__txt,
+        &-section__pic {
             width: 100%;
         }
 
@@ -112,14 +107,14 @@ $color-orange: #FF7143;
             padding: 30px 0;
         }
 
-        .main-section-txt-btnBlock {
+        .main-section__txt-btn-block {
             justify-content: center;
         }
 
-        &-sectionCards {
+        &-section--cards {
             padding: 50px 0;
 
-            &-head {
+            &__head {
                 margin-bottom: 60px;
 
                 justify-content: center;
@@ -135,7 +130,7 @@ $color-orange: #FF7143;
                 }
             }
 
-            &-main {
+            &__main {
                 flex-direction: column;
 
                 &-item {
@@ -143,30 +138,38 @@ $color-orange: #FF7143;
                     margin-bottom: 20px;
                 }
 
-                &-isActive {
+                &--is-active {
                     transform: scale(1);
                 }
             }
         }
 
-        &-sectionSB-item-pic {
+        &-section--small-blocks__item-pic {
             width: 120px;
         }
     }
 
     .img {
-        height: 480px;
+        height: 530px;
+    }
+
+    .pic-1-st,
+    .pic-2-nd,
+    .pic-3-rd {
+        background-position: center;
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
         text-align: center;
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .wrapper {
+    .wrapper,
+    .wrapper--large {
         width: 360px;
     }
 
@@ -175,10 +178,10 @@ $color-orange: #FF7143;
     }
 
     .main {
-        &-sectionSB {
+        &-section--small-blocks {
             flex-direction: column;
 
-            &-item {
+            &__item {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -186,18 +189,20 @@ $color-orange: #FF7143;
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
         font-size: 30px;
         line-height: 40px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .wrapper {
+    .wrapper,
+    .wrapper--large {
         width: 320px;
     }
 
     .img {
-        height: 300px;
+        height: 350px;
     }
 }

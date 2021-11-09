@@ -14,7 +14,7 @@ $color-orange: #FF7143;
     align-items: center;
     min-height: 120px;
 
-    &-logo {
+    &__logo {
         display: block;
         width: 200px;
         height: 40px;
@@ -26,7 +26,7 @@ $color-orange: #FF7143;
         justify-content: space-between;
         width: 30%;
 
-        &-item{
+        &__item{
             font-family: $font-family-title;
             font-size: 15px;
             font-weight: bold;
@@ -34,21 +34,17 @@ $color-orange: #FF7143;
             color: $font-color-txt;
         }
 
-        &-item:hover{
+        &__item:hover{
             color: $font-color-title;
         }
 
-        &-isActive{
+        &--isActive{
             color: $font-color-title;
             border-bottom: 2px solid $color-purple;
         }
     }
 
-    &-button{
-        background-color: $color-orange;
-    }
-
-    &-button:hover{
-        background-color: $color-purple;
+    .btn-wrapper{
+        width: 210px;
     }
 }

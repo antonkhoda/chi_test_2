@@ -14,20 +14,20 @@ $color-orange: #FF7143;
         justify-content: space-between;
         align-items: center;
 
-        &-txt {
+        &__txt {
             width: 50%;
 
-            &-upToButton {
-                margin-bottom: 45px;
-            }
-
-            &-btnBlock {
+            &-btn-block {
                 display: flex;
                 justify-content: flex-start;
             }
+
+            .btn-wrapper{
+                width: 210px;
+            }
         }
 
-        &-pic {
+        &__pic {
             width: 50%;
         }
     }
@@ -35,26 +35,32 @@ $color-orange: #FF7143;
     &-sectionLinks{
         flex-wrap: wrap;
 
-        &-item{
-            width: 120px;
+        &__item{
+            width: 125px;
             height: 60px;
         }
     }
 
-    &-sectionRow {
+    &-section--row {
         flex-direction: row;
-        min-height: 730px;
     }
 
-    &-sectionRowRev {
+    &-section--row-rev {
         flex-direction: row-reverse;
-        min-height: 730px;
     }
 
-    &-sectionSB{
+    &-section--height-large{
+        min-height: 810px;
+    }
+
+    &-section--height-short{
+        min-height: 650px;
+    }
+
+    &-section--small-blocks{
         padding: 40px 0;
 
-        &-item{
+        &__item{
             width: 30%;
 
             &-pic{
@@ -65,16 +71,17 @@ $color-orange: #FF7143;
 
             &-txt{
                 font-size: 16px;
+                text-align: center;
             }
         }
     }
 
-    &-sectionCards{
+    &-section--cards{
         flex-direction: column;
         flex-wrap: wrap;
         padding: 100px 0;
         
-        &-head{
+        &__head{
             display: flex;
             justify-content: space-between;
             margin-bottom: 100px;
@@ -90,7 +97,7 @@ $color-orange: #FF7143;
             }
         }
 
-        &-main{
+        &__main{
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -102,24 +109,10 @@ $color-orange: #FF7143;
                 font-size: 18px;
                 text-align: center;
                 background-color: $color-light-bg;
-
-                &-title{
-                    margin-bottom: 10px;
-                }
-
-                &-btn{
-                    width: 100%;
-                    color: $color-purple;
-                    background-color: #fff;
-                }
-
-                &-btn:hover{
-                    color: $font-color-title;
-                }
             }
 
-            &-isActive{
-                transform: scale(1.2);
+            &--is-active{
+                transform: scale(1.15);
                 background-color: $color-orange;
                 color: #fff;
 
@@ -127,12 +120,12 @@ $color-orange: #FF7143;
                     color: #fff;
                 }
 
-                .main-sectionCards-main-item-btn{
+                .button--white{
                     background-color: #a0391a;
                     color: #fff;
                 }
 
-                .main-sectionCards-main-item-btn:hover{
+                .button--white:hover{
                     background-color: $color-purple;
                 }
             }
@@ -140,57 +133,57 @@ $color-orange: #FF7143;
     }
 }
 
-.pic1st {
-    background: url('../images/pictures/block-1.png') no-repeat center;
+.pic-1-st {
+    background: url('../images/pictures/block-1.png') no-repeat right;
     background-size: 100%;
 }
 
-.pic2nd{
-    background: url('../images/pictures/block-2.png') no-repeat center;
-    background-size: 70%;
+.pic-2-nd{
+    background: url('../images/pictures/block-2.png') no-repeat left;
+    background-size: 65%;
 }
 
-.pic3rd{
-    background: url('../images/pictures/block-3.png') no-repeat center;
-    background-size: 70%;
+.pic-3-rd{
+    background: url('../images/pictures/block-3.png') no-repeat right;
+    background-size: 65%;
 }
 
-.linkPic1{
+.link-pic-1{
     background: url('../images/icons/main-pic-1.svg') no-repeat center;
     background-size: 100%;
 }
 
-.linkPic2{
+.link-pic-2{
     background: url('../images/icons/main-pic-2.svg') no-repeat center;
     background-size: 100%;
 }
 
-.linkPic3{
+.link-pic-3{
     background: url('../images/icons/main-pic-3.svg') no-repeat center;
     background-size: 80%;
 }
 
-.linkPic4{
+.link-pic-4{
     background: url('../images/icons/main-pic-4.svg') no-repeat center;
     background-size: 100%;
 }
 
-.linkPic5{
+.link-pic-5{
     background: url('../images/icons/main-pic-5.svg') no-repeat center;
     background-size: 100%;
 }
 
-.picMini1st {
+.pic-mini-1-st {
     background: url('../images/pictures/block-4-pic-1.png') no-repeat center;
     background-size: 100%;
 }
 
-.picMini2nd{
+.pic-mini-2-nd{
     background: url('../images/pictures/block-4-pic-2.png') no-repeat center;
     background-size: 100%;
 }
 
-.picMini3rd{
+.pic-mini-3-rd{
     background: url('../images/pictures/block-4-pic-3.png') no-repeat center;
     background-size: 100%;
 }

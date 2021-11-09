@@ -39,13 +39,17 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
-    padding: 0 20px 0 110px;
+    padding: 0 105px;
+
+    &--large{
+        padding: 0 35px 0 105px;
+    }
 }
 
 .button {
-    padding: 0 60px;
+    width: 100%;
     background-color: $color-purple;
     border: none;
     border-radius: 10px;
@@ -59,6 +63,20 @@ body {
     &-marginR {
         margin-right: 40px;
     }
+
+    &--orange {
+        background-color: $color-orange;
+    }
+
+    &--orange {
+        background-color: $color-orange;
+    }
+
+    &--white {
+        width: 100%;
+        color: $color-purple;
+        background-color: #fff;
+    }
 }
 
 .button:hover {
@@ -66,7 +84,15 @@ body {
     background-color: $color-orange;
 }
 
-.buttonArrow {
+.button--orange:hover {
+    background-color: $color-purple;
+}
+
+.button--white:hover {
+    color: $font-color-title;
+}
+
+.button--arrow {
     display: block;
     width: 60px;
     height: 60px;
@@ -77,20 +103,20 @@ body {
     transition: 0.5s;
 }
 
-.buttonArrow:hover {
+.button--arrow:hover {
     cursor: pointer;
     background-color: $color-orange;
     border-color: $color-orange;
 }
 
-.switchButton {
+.button--switch {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     background-color: $color-light-bg;
     border-radius: 10px;
 
-    &-item {
+    &__item {
         padding: 0 50px;
         color: $font-color-title;
         background-color: $color-light-bg;
@@ -98,23 +124,27 @@ body {
         border-radius: 0;
     }
 
-    &-isActive {
-        color: #fff;
-        background-color: $color-purple;
-    }
-
-    &-item:first-child {
+    &__item:first-child {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
-    
-    &-item:last-child {
+
+    &__item:last-child {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+
+    &--is-active {
+        color: #fff;
+        background-color: $color-purple;
+    }
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: $font-family-title;
     color: $font-color-title;
 }
@@ -143,25 +173,37 @@ p {
 
 .img {
     width: 100%;
-    height: 650px;
+    height: 610px;
 }
 
-.fontS-30{
+.width-90-per {
+    width: 90%;
+}
+
+.f-size-30 {
     font-size: 30px;
 }
 
-.marginB-20{
-    margin-bottom: 20px;
-}
-
-.marginB-25{
+.m-bottom-25 {
     margin-bottom: 25px;
 }
 
-.marginB-40{
+.m-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.m-bottom-40 {
     margin-bottom: 40px;
 }
 
-.marginR-40{
+.m-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.m-bottom-60 {
+    margin-bottom: 60px;
+}
+
+.m-right-40 {
     margin-right: 40px;
 }
