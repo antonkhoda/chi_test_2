@@ -20,7 +20,7 @@
         </nav>
         <div class="btn-wrapper">
             <button class="button button--orange">Get Started</button>
-        </div>  
+        </div>
     </header>
     <main class="main">
         <section class="main-section main-section--row main-section--height-large wrapper wrapper--large">
@@ -40,12 +40,44 @@
                 <div class="img pic-1-st"></div>
             </div>
         </section>
-        <section class="main-section main-sectionLinks wrapper">
-            <a href="#" class="main-sectionLinks__item link-pic-1"></a>
-            <a href="#" class="main-sectionLinks__item link-pic-2"></a>
-            <a href="#" class="main-sectionLinks__item link-pic-3"></a>
-            <a href="#" class="main-sectionLinks__item link-pic-4"></a>
-            <a href="#" class="main-sectionLinks__item link-pic-5"></a>
+        <section class="main-section js-carousel wrapper">
+            <a class="js-carousel__prev"></a>
+            <div class="js-carousel__gallery">
+                <ul class="js-carousel__gallery-list">
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-1"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-2"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-3"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-4"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-5"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-1"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-2"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-3"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-4"></a>
+                    </li>
+                    <li class="js-carousel__gallery-list-item">
+                        <a href="#" class="js-carousel__gallery-list-item-pic link-pic-5"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="js-carousel__next"></a>
         </section>
         <section class="main-section main-section--row-rev main-section--height-short wrapper">
             <div class="main-section__txt">
@@ -97,9 +129,10 @@
                 <div class="main-section--cards__head">
                     <h2 class="main-section--cards__head-item">Get the right plan for future product.</h2>
                     <div class="main-section--cards__head-btns main-section--cards__head-item">
-                        <div class="button--switch">
-                            <button class="button button--switch__item button--switch--is-active">Yearly</button>
-                            <button class="button button--switch__item ">Monthly</button>
+                        <div class="button--switch js-payment-switch">
+                            <button
+                                class="button button--switch__item button--switch--is-active js-yearly-payment">Yearly</button>
+                            <button class="button button--switch__item js-monthly-payment">Monthly</button>
                         </div>
                     </div>
                 </div>
@@ -114,17 +147,28 @@
                     </div>
                     <div class="main-section--cards__main-item main-section--cards__main--is-active">
                         <p>Premium</p>
-                        <h2 class="m-bottom-30">$29<span class="f-size-30">/month</span></h2>
-                        <p class="m-bottom-25">10 Website</p>
-                        <p class="m-bottom-25">15 GB Hosting</p>
+                        <h2 class="m-bottom-30">$<var class="js-premium-price">29</var><span
+                                class="f-size-30">/month</span>
+                        </h2>
+                        <p class="m-bottom-25">
+                            <var class="js-premium-website">10</var>
+                            Website
+                        </p>
+                        <p class="m-bottom-25">
+                            <var class="js-premium-hosting">15</var>
+                            GB Hosting
+                        </p>
                         <p class="m-bottom-50">Premium Support</p>
                         <button class="button button--white">Get Started</button>
                     </div>
                     <div class="main-section--cards__main-item">
                         <p>Enterprise</p>
-                        <h2 class="m-bottom-30">$49<span class="f-size-30">/month</span></h2>
+                        <h2 class="m-bottom-30">$<var class="js-enterprise-price">49</var><span
+                                class="f-size-30">/month</span></h2>
                         <p class="m-bottom-25">Unlimited Website</p>
-                        <p class="m-bottom-25">50 GB Hosting</p>
+                        <p class="m-bottom-25">
+                            <var class="js-enterprise-hosting">50</var>
+                            GB Hosting</p>
                         <p class="m-bottom-50">Premium Support</p>
                         <button class="button button--white">Get Started</button>
                     </div>

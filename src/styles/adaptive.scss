@@ -5,16 +5,17 @@
 // 360px
 // 320px
 
-$font-family-title: 'DM Sans',
+$font-family-title: "DM Sans",
 sans-serif;
-$font-family-txt: 'Mulish',
+$font-family-txt: "Mulish",
 sans-serif;
-$font-color-title: #19191B;
+$font-color-title: #19191b;
 $font-color-txt: #696871;
-$color-purple: #5454D4;
-$color-orange: #FF7143;
+$color-purple: #5454d4;
+$color-orange: #ff7143;
 
 @media screen and (max-width: 1280px) {
+
     .wrapper,
     .wrapper--large {
         width: 992px;
@@ -32,6 +33,7 @@ $color-orange: #FF7143;
 }
 
 @media screen and (max-width: 992px) {
+
     .wrapper,
     .wrapper--large {
         width: 768px;
@@ -64,6 +66,18 @@ $color-orange: #FF7143;
         line-height: 50px;
     }
 
+    .js-carousel {
+        &__gallery {
+            width: 70%;
+        }
+
+        &__next,
+        &__prev {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
     .button--arrow {
         width: 50px;
         height: 50px;
@@ -84,6 +98,7 @@ $color-orange: #FF7143;
 }
 
 @media screen and (max-width: 768px) {
+
     .wrapper,
     .wrapper--large {
         width: 480px;
@@ -100,11 +115,6 @@ $color-orange: #FF7143;
         &-section__txt,
         &-section__pic {
             width: 100%;
-        }
-
-        &-sectionLinks {
-            justify-content: space-around;
-            padding: 30px 0;
         }
 
         .main-section__txt-btn-block {
@@ -149,6 +159,12 @@ $color-orange: #FF7143;
         }
     }
 
+    .js-carousel {
+        &__gallery {
+            width: 75%;
+        }
+    }
+
     .img {
         height: 530px;
     }
@@ -168,6 +184,7 @@ $color-orange: #FF7143;
 }
 
 @media screen and (max-width: 480px) {
+
     .wrapper,
     .wrapper--large {
         width: 360px;
@@ -188,6 +205,10 @@ $color-orange: #FF7143;
         }
     }
 
+    .js-carousel__gallery {
+        width: 50%;
+    }
+
     h1,
     h2,
     h3 {
@@ -197,9 +218,14 @@ $color-orange: #FF7143;
 }
 
 @media screen and (max-width: 360px) {
+
     .wrapper,
     .wrapper--large {
         width: 320px;
+    }
+
+    .js-carousel__gallery {
+        width: 60%;
     }
 
     .img {

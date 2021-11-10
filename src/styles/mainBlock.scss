@@ -32,15 +32,6 @@ $color-orange: #FF7143;
         }
     }
 
-    &-sectionLinks{
-        flex-wrap: wrap;
-
-        &__item{
-            width: 125px;
-            height: 60px;
-        }
-    }
-
     &-section--row {
         flex-direction: row;
     }
