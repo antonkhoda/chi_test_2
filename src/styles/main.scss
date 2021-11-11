@@ -93,8 +93,8 @@ body {
 }
 
 .button--arrow,
-.js-carousel__prev,
-.js-carousel__next {
+.carousel__prev,
+.carousel__next {
     display: block;
     width: 60px;
     height: 60px;
@@ -106,8 +106,8 @@ body {
 }
 
 .button--arrow:hover,
-.js-carousel__prev:hover,
-.js-carousel__next:hover {
+.carousel__prev:hover,
+.carousel__next:hover {
     cursor: pointer;
     background-color: $color-orange;
     border-color: $color-orange;
@@ -121,7 +121,7 @@ body {
     border-radius: 10px;
 
     &__item {
-        padding: 0 50px;
+        padding: 0 30px;
         color: $font-color-title;
         background-color: $color-light-bg;
         line-height: 55px;
@@ -144,7 +144,7 @@ body {
     }
 }
 
-.js-carousel {
+.carousel {
     display: flex;
     justify-content: space-between;
     align-items: center;

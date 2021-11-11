@@ -1,6 +1,6 @@
 const carousel = document.querySelector(".js-carousel__gallery");
-const carouselList = document.querySelector(".js-carousel__gallery-list");
-const carouselListEl = document.querySelectorAll(".js-carousel__gallery-list-item");
+const carouselList = document.querySelector(".js-carousel__list");
+const carouselListEl = document.querySelectorAll(".js-carousel__item");
 const carouseBtnPrev = document.querySelector(".js-carousel__prev");
 const carouseBtnNext = document.querySelector(".js-carousel__next");
 

@@ -66,7 +66,16 @@ $color-orange: #ff7143;
         line-height: 50px;
     }
 
-    .js-carousel {
+    .button{
+        &--switch{
+            width: 100%;
+            &__item{
+                padding: 0;
+            }
+        }
+    }
+
+    .carousel {
         &__gallery {
             width: 70%;
         }
@@ -159,7 +168,7 @@ $color-orange: #ff7143;
         }
     }
 
-    .js-carousel {
+    .carousel {
         &__gallery {
             width: 75%;
         }
@@ -205,7 +214,7 @@ $color-orange: #ff7143;
         }
     }
 
-    .js-carousel__gallery {
+    .carousel__gallery {
         width: 50%;
     }
 
@@ -224,7 +233,7 @@ $color-orange: #ff7143;
         width: 320px;
     }
 
-    .js-carousel__gallery {
+    .carousel__gallery {
         width: 60%;
     }
 
